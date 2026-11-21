@@ -13,6 +13,7 @@ from PIL import Image
 BASE_URL = "https://m.livetv.sx"
 LIST_URL = f"{BASE_URL}/enx/"
 ROOT_DIR = Path(__file__).resolve().parent
+MY_IMG_DIR = ROOT_DIR / "myimg"
 IMG_DIR = ROOT_DIR / "img"
 OUTPUT_M3U = ROOT_DIR / "live_events.m3u"
 GROUP_NAME = "✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨"
@@ -22,7 +23,7 @@ GROUP_NAME = "✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨"
 GITHUB_REPO = os.getenv("GITHUB_REPOSITORY", "YOUR_USERNAME/YOUR_REPO")
 GITHUB_BRANCH = os.getenv("GITHUB_REF_NAME", "main")
 
-TARGET_SIZE = 40  # Icon size 75x75 px
+TARGET_SIZE = 75  # Icon size 75x75 px (jab myimg mein na mile)
 
 USER_AGENT = (
     "Mozilla/5.0 (Linux; Android 13; Mobile) AppleWebKit/537.36 "
@@ -74,18 +75,43 @@ def fetch_html(url: str, referer: str | None = None, timeout: int = 20) -> str |
         return None
 
 
-def download_and_resize_icon(img_url: str, size: int = TARGET_SIZE) -> str:
-    """Icon ko img/ mein download karke 75x75 banata hai aur raw GitHub URL return karta hai."""
+def find_custom_icon(safe_name: str, base_stem: str) -> str | None:
+    """myimg/ folder mein usi naam ki file check karta hai; mile toh raw URL return karta hai."""
+    if not MY_IMG_DIR.exists() or not MY_IMG_DIR.is_dir():
+        return None
+
+    # Pehle exact filename check karein (jaise es.gif)
+    exact_path = MY_IMG_DIR / safe_name
+    if exact_path.is_file():
+        return f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/myimg/{safe_name}"
+
+    # Phir common extensions ke saath <stem> check karein (jaise es.png, es.jpg, es.webp)
+    for ext in (".png", ".jpg", ".jpeg", ".webp", ".gif", ".svg"):
+        candidate = MY_IMG_DIR / f"{base_stem}{ext}"
+        if candidate.is_file():
+            return f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/myimg/{candidate.name}"
+
+    return None
+
+
+def resolve_icon_url(img_url: str, size: int = TARGET_SIZE) -> str:
+    """Pehle myimg/ check karta hai, nahi mile toh img/ mein download + 75x75 resize karta hai."""
     if not img_url:
         return ""
 
-    IMG_DIR.mkdir(parents=True, exist_ok=True)
     parsed_name = os.path.basename(urlparse(img_url).path) or "icon.png"
     safe_name = re.sub(r"[^A-Za-z0-9._-]", "_", parsed_name)
     base_stem = Path(safe_name).stem or "icon"
+
+    # 1. Pehle apne myimg/ folder mein check karein
+    custom_url = find_custom_icon(safe_name, base_stem)
+    if custom_url:
+        return custom_url
+
+    # 2. Nahi mila toh img/ folder mein download karke 75x75 save karein
+    IMG_DIR.mkdir(parents=True, exist_ok=True)
     out_filename = f"{base_stem}.png"
     out_path = IMG_DIR / out_filename
-
     raw_url = f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/img/{out_filename}"
 
     try:
@@ -203,7 +229,7 @@ def build_m3u() -> str:
     }
     logo_map: dict[str, str] = {}
     for src_img in unique_imgs:
-        logo_map[src_img] = download_and_resize_icon(src_img, TARGET_SIZE)
+        logo_map[src_img] = resolve_icon_url(src_img, TARGET_SIZE)
 
     m3u_lines = ["#EXTM3U"]
 
