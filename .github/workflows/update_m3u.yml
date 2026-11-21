@@ -1,0 +1,40 @@
+name: Update Live Events M3U (Python)
+
+on:
+  schedule:
+    - cron: '0,30 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-m3u:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Run Python M3U script
+        run: python generate_m3u.py
+
+      - name: Commit and push updated M3U
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add live_events.m3u
+          if ! git diff --cached --quiet; then
+            git commit -m "Update live_events.m3u"
+            git push
+          else
+            echo "No changes in live_events.m3u"
+          fi
