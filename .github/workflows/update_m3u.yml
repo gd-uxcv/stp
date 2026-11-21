@@ -22,19 +22,19 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install requests beautifulsoup4
+        run: pip install requests beautifulsoup4 pillow
 
       - name: Run Python M3U script
         run: python generate_m3u.py
 
-      - name: Commit and push updated M3U
+      - name: Commit and push updated M3U and images
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add live_events.m3u
+          git add live_events.m3u img/
           if ! git diff --cached --quiet; then
-            git commit -m "Update live_events.m3u"
+            git commit -m "Update live_events.m3u and icons"
             git push
           else
-            echo "No changes in live_events.m3u"
+            echo "No changes to commit"
           fi
