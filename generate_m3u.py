@@ -22,7 +22,7 @@ GROUP_NAME = "✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨"
 GITHUB_REPO = os.getenv("GITHUB_REPOSITORY", "YOUR_USERNAME/YOUR_REPO")
 GITHUB_BRANCH = os.getenv("GITHUB_REF_NAME", "main")
 
-TARGET_SIZE = 75  # Icon size 75x75 px
+TARGET_SIZE = 40  # Icon size 75x75 px
 
 USER_AGENT = (
     "Mozilla/5.0 (Linux; Android 13; Mobile) AppleWebKit/537.36 "
