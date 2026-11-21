@@ -1,4 +1,6 @@
 import html
+import io
+import os
 import re
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
@@ -6,11 +8,21 @@ from urllib.parse import urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
+from PIL import Image
 
 BASE_URL = "https://m.livetv.sx"
 LIST_URL = f"{BASE_URL}/enx/"
-OUTPUT_M3U = Path(__file__).resolve().parent / "live_events.m3u"
+ROOT_DIR = Path(__file__).resolve().parent
+IMG_DIR = ROOT_DIR / "img"
+OUTPUT_M3U = ROOT_DIR / "live_events.m3u"
 GROUP_NAME = "✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨"
+
+# GitHub Actions mein GITHUB_REPOSITORY automatically set hota hai,
+# local par chalate waqt yahan "username/repo" likh sakte hain.
+GITHUB_REPO = os.getenv("GITHUB_REPOSITORY", "YOUR_USERNAME/YOUR_REPO")
+GITHUB_BRANCH = os.getenv("GITHUB_REF_NAME", "main")
+
+TARGET_SIZE = 200  # Icon ko bada dikhane ke liye target size (px)
 
 USER_AGENT = (
     "Mozilla/5.0 (Linux; Android 13; Mobile) AppleWebKit/537.36 "
@@ -60,6 +72,62 @@ def fetch_html(url: str, referer: str | None = None, timeout: int = 20) -> str |
         return resp.text
     except requests.RequestException:
         return None
+
+
+def download_and_upscale_icon(img_url: str, size: int = TARGET_SIZE) -> str:
+    """Icon ko img/ mein download karke bada (upscale) karta hai aur raw GitHub URL return karta hai."""
+    if not img_url:
+        return ""
+
+    IMG_DIR.mkdir(parents=True, exist_ok=True)
+    parsed_name = os.path.basename(urlparse(img_url).path) or "icon.png"
+    safe_name = re.sub(r"[^A-Za-z0-9._-]", "_", parsed_name)
+    # PNG mein save karte hain taaki transparency aur bada size clean rahe
+    base_stem = Path(safe_name).stem or "icon"
+    out_filename = f"{base_stem}.png"
+    out_path = IMG_DIR / out_filename
+
+    raw_url = f"https://raw.githubusercontent.com/{GITHUB_REPO}/{GITHUB_BRANCH}/img/{out_filename}"
+
+    # Agar file pehle se bani hui hai toh dobara download/resize karne ki zaroorat nahi
+    if out_path.exists():
+        return raw_url
+
+    try:
+        resp = requests.get(
+            img_url,
+            headers={**DEFAULT_HEADERS, "Referer": LIST_URL},
+            timeout=15,
+        )
+        if resp.status_code >= 400 or not resp.content:
+            return img_url
+
+        with Image.open(io.BytesIO(resp.content)) as im:
+            # Animated GIF ho toh pehla frame lein, warna RGBA mein convert karein
+            if getattr(im, "is_animated", False):
+                im.seek(0)
+            rgba = im.convert("RGBA")
+
+            # Aspect ratio barkarar rakhte hue bada karein
+            w, h = rgba.size
+            if w > 0 and h > 0:
+                scale = min(size / w, size / h)
+                new_w = max(1, int(round(w * scale)))
+                new_h = max(1, int(round(h * scale)))
+                # Pixelated chhote icons ke liye NEAREST sharp aur saaf dikhta hai
+                resized = rgba.resize((new_w, new_h), Image.Resampling.NEAREST)
+
+                canvas = Image.new("RGBA", (size, size), (0, 0, 0, 0))
+                offset_x = (size - new_w) // 2
+                offset_y = (size - new_h) // 2
+                canvas.paste(resized, (offset_x, offset_y), resized)
+                canvas.save(out_path, format="PNG", optimize=True)
+                return raw_url
+
+    except Exception:
+        pass
+
+    return img_url
 
 
 def get_live_events(list_html: str) -> list[dict[str, str]]:
@@ -137,6 +205,15 @@ def build_m3u() -> str:
             except Exception:
                 results_by_index[idx] = []
 
+    # Unique icon URLs download + bada karke local repo img/ mein save karein
+    unique_imgs = {
+        ev["img"] for idx, ev in enumerate(live_events)
+        if ev["img"] and results_by_index.get(idx)
+    }
+    logo_map: dict[str, str] = {}
+    for src_img in unique_imgs:
+        logo_map[src_img] = download_and_upscale_icon(src_img, TARGET_SIZE)
+
     m3u_lines = ["#EXTM3U"]
 
     for idx, event in enumerate(live_events):
@@ -144,8 +221,8 @@ def build_m3u() -> str:
         if not embeds:
             continue
 
-        safe_logo = event["img"].replace('"', "")
-        logo_attr = f' tvg-logo="{safe_logo}"' if safe_logo else ""
+        final_logo = logo_map.get(event["img"], event["img"]).replace('"', "")
+        logo_attr = f' tvg-logo="{final_logo}"' if final_logo else ""
         group_attr = f' group-title="{GROUP_NAME}"'
 
         for stream_num, embed_url in enumerate(embeds, start=1):
