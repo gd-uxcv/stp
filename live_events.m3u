@@ -1,18 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/poonamchouhan54/Livesx/main/img/nfl.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",New York Giants – Jacksonville Jaguars s-1
-https://emb.tvp18.xyz/p2p/?id=268817
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/poonamchouhan54/Livesx/main/img/nfl.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",New York Giants – Jacksonville Jaguars s-2
-https://emb.tvp18.xyz/p2p/?id=268788
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/poonamchouhan54/Livesx/main/img/nfl.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",New York Giants – Jacksonville Jaguars s-3
-https://emb.tvp18.xyz/p2p/?id=269538
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/poonamchouhan54/Livesx/main/img/nfl.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",New York Giants – Jacksonville Jaguars s-4
-https://emb.tvp18.xyz/p2p/?id=269589
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/poonamchouhan54/Livesx/main/img/nfl.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",New York Giants – Jacksonville Jaguars s-5
-https://emb.tvp18.xyz/p2p/?id=271377
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/poonamchouhan54/Livesx/main/img/nfl.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",New York Giants – Jacksonville Jaguars s-6
-https://emb.tvp18.xyz/p2p/?id=271475
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/poonamchouhan54/Livesx/main/img/nfl.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",New York Giants – Jacksonville Jaguars s-7
-https://emb.tvp18.xyz/p2p/?id=271837
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/poonamchouhan54/Livesx/main/myimg/nba.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Miami – Oklahoma s-1
 https://emb.tvp18.xyz/p2p/?id=270623
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/poonamchouhan54/Livesx/main/myimg/nba.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Miami – Oklahoma s-2
@@ -45,6 +31,18 @@ https://emb.tvp18.xyz/p2p/?id=269855
 https://emb.tvp18.xyz/p2p/?id=271912
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/poonamchouhan54/Livesx/main/myimg/nhl.jpeg" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Saint-Louis – Edmonton s-3
 https://emb.tvp18.xyz/p2p/?id=271158
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/poonamchouhan54/Livesx/main/myimg/nba.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",New York – Indiana s-1
+https://emb.tvp18.xyz/p2p/?id=269782
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/poonamchouhan54/Livesx/main/myimg/nba.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",New York – Indiana s-2
+https://emb.tvp18.xyz/p2p/?id=268891
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/poonamchouhan54/Livesx/main/myimg/nba.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",New York – Indiana s-3
+https://emb.tvp18.xyz/p2p/?id=270081
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/poonamchouhan54/Livesx/main/myimg/nhl.jpeg" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Vancouver – Chicago s-1
+https://emb.tvp18.xyz/p2p/?id=269850
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/poonamchouhan54/Livesx/main/myimg/nhl.jpeg" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Vancouver – Chicago s-2
+https://emb.tvp18.xyz/p2p/?id=271163
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/poonamchouhan54/Livesx/main/img/ar.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Instituto – Huracan s-1
+https://emb.tvp18.xyz/p2p/?id=269505
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/poonamchouhan54/Livesx/main/myimg/cricket.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",New Zealand – India s-1
 https://emb.tvp18.xyz/p2p/?id=268983
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/poonamchouhan54/Livesx/main/myimg/cricket.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",New Zealand – India s-2
