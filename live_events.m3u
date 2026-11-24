@@ -43,10 +43,6 @@ https://emb.apl430.me/player/live.php?id=209856&w=512&h=288
 https://emb.apl430.me/player/live.php?id=253247&w=512&h=288
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/euroleague.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Valencia – Panathinaikos s-14
 https://emb.apl430.me/player/live.php?id=260290&w=512&h=288
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/myimg/plusliga.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Warta Zawiercie – Barkom-Kazhany s-1
-https://emb.tvp6.online/p2p/?id=269129
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/myimg/plusliga.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Warta Zawiercie – Barkom-Kazhany s-2
-https://emb.tvp6.online/p2p/?id=269706
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/euroleague.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",ASVEL – Milan s-1
 https://emb.tvp6.online/p2p/?id=269192
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/euroleague.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",ASVEL – Milan s-2
@@ -483,3 +479,7 @@ https://emb.tvp6.online/p2p/?id=268995
 https://emb.tvp6.online/p2p/?id=269121
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/sc.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Rangers – Aberdeen s-5
 https://emb.tvp6.online/p2p/?id=270167
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/vb.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Brasilia Volei – Pinheiros s-1
+https://emb.tvp6.online/p2p/?id=271028
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/vb.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Brasilia Volei – Pinheiros s-2
+https://emb.tvp6.online/p2p/?id=271031
