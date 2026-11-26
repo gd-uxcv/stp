@@ -361,10 +361,6 @@ https://emb.tvp19.xyz/p2p/?id=271163
 https://emb.tvp19.xyz/p2p/?id=271377
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/nfl.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Dallas Cowboys – Philadelphia Eagles s-11
 https://emb.tvp19.xyz/p2p/?id=272119
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/rugbyd2.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Brive – Biarritz Olympique s-1
-https://emb.tvp19.xyz/p2p/?id=271616
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/rollerh.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Porto – Benfica s-1
-https://emb.tvp19.xyz/p2p/?id=268990
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/ellcuefa.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Simulcast s-1
 https://emb.tvp19.xyz/p2p/?id=270118
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/ellcuefa.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Simulcast s-2
@@ -377,3 +373,7 @@ https://emb.tvp19.xyz/p2p/?id=271255
 https://emb.apl430.me/player/live.php?id=237285&w=512&h=288
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/ellcuefa.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Simulcast s-6
 https://emb.apl430.me/player/live.php?id=242757&w=512&h=288
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/rugbyd2.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Brive – Biarritz Olympique s-1
+https://emb.tvp19.xyz/p2p/?id=271616
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/rollerh.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Porto – Benfica s-1
+https://emb.tvp19.xyz/p2p/?id=268990
