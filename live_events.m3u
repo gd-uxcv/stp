@@ -47,6 +47,10 @@ https://emb.tvp20.xyz/p2p/?id=269120
 https://emb.tvp20.xyz/p2p/?id=270954
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/skel.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",World Cup, Altenberg s-3
 https://emb.tvp20.xyz/p2p/?id=271612
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/u17wc.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Colombia – Serbia s-1
+https://emb.tvp20.xyz/p2p/?id=269961
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/cafcon.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Azam – Al Ahli Tripoli s-1
+https://emb.tvp20.xyz/p2p/?id=271463
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/pdc.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Players Championship s-1
 https://emb.tvp20.xyz/p2p/?id=271860
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/pdc.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Players Championship s-2
@@ -55,12 +59,6 @@ https://emb.tvp20.xyz/p2p/?id=269857
 https://emb.tvp20.xyz/p2p/?id=271221
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/pdc.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Players Championship s-4
 https://emb.tvp20.xyz/p2p/?id=272138
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/il.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Hapoel Kfar Shalem – Hapoel Kfar Saba s-1
-https://emb.tvp20.xyz/p2p/?id=269971
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/cafcon.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Azam – Al Ahli Tripoli s-1
-https://emb.tvp20.xyz/p2p/?id=271463
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/u17wc.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Colombia – Serbia s-1
-https://emb.tvp20.xyz/p2p/?id=269961
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/qa.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Al-Sailiya – Al-Gharafa s-1
 https://emb.tvp20.xyz/p2p/?id=271857
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/u17wc.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Honduras – Japan s-1
@@ -69,7 +67,19 @@ https://emb.tvp20.xyz/p2p/?id=271064
 https://emb.tvp20.xyz/p2p/?id=271644
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/u17wc.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Honduras – Japan s-3
 https://emb.tvp20.xyz/p2p/?id=271920
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/il.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Hapoel Kfar Shalem – Hapoel Kfar Saba s-1
+https://emb.tvp20.xyz/p2p/?id=269971
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/myimg/cricket.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Sharjah Warriors – Dubai Capitals s-1
 https://emb.tvp20.xyz/p2p/?id=269486
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/mma.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",One FC s-1
 https://emb.tvp20.xyz/p2p/?id=271016
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/vwr.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Dynamo Ural – Dynamo LO s-1
+https://emb.tvp20.xyz/p2p/?id=271017
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/myimg/basket.jpeg" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Anagennisi – Kronos s-1
+https://emb.tvp20.xyz/p2p/?id=271878
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/u17wc.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Costa Rica – Brazil s-1
+https://emb.tvp20.xyz/p2p/?id=269563
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/u17wc.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Costa Rica – Brazil s-2
+https://emb.tvp20.xyz/p2p/?id=270352
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/u17wc.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Costa Rica – Brazil s-3
+https://emb.tvp20.xyz/p2p/?id=268897
