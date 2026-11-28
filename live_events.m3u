@@ -1,30 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/myimg/nba.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Detroit – Milwaukee s-1
-https://emb.tvp20.xyz/p2p/?id=270085
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/myimg/nba.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Indiana – Philadelphia s-1
-https://emb.tvp20.xyz/p2p/?id=270085
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/myimg/nba.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Indiana – Philadelphia s-2
-https://emb.tvp20.xyz/p2p/?id=271912
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/myimg/nba.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Toronto – Brooklyn Nets s-1
-https://emb.tvp20.xyz/p2p/?id=270085
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/myimg/nba.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Toronto – Brooklyn Nets s-2
-https://emb.tvp20.xyz/p2p/?id=272072
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/myimg/nba.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Toronto – Brooklyn Nets s-3
-https://emb.tvp20.xyz/p2p/?id=269784
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/myimg/nhl.jpeg" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",NY Islanders – Winnipeg s-1
-https://emb.tvp20.xyz/p2p/?id=270198
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/myimg/nhl.jpeg" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",NY Islanders – Winnipeg s-2
-https://emb.tvp20.xyz/p2p/?id=270144
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/us.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Columbus Crew – Inter Miami s-1
-https://emb.tvp20.xyz/p2p/?id=269782
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/us.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Columbus Crew – Inter Miami s-2
-https://emb.tvp20.xyz/p2p/?id=270532
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/us.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Columbus Crew – Inter Miami s-3
-https://emb.tvp20.xyz/p2p/?id=271475
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/us.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Columbus Crew – Inter Miami s-4
-https://emb.tvp20.xyz/p2p/?id=269074
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/us.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Columbus Crew – Inter Miami s-5
-https://emb.tvp20.xyz/p2p/?id=271797
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/myimg/nhl.jpeg" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Edmonton – Seattle Kraken s-1
 https://emb.tvp20.xyz/p2p/?id=269855
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/myimg/nhl.jpeg" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Buffalo – Pittsburgh s-1
@@ -39,6 +13,12 @@ https://emb.tvp20.xyz/p2p/?id=271162
 https://emb.tvp20.xyz/p2p/?id=272078
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/myimg/nba.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",San Antonio – LA Lakers s-1
 https://emb.tvp20.xyz/p2p/?id=272061
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/us.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Real Salt Lake – Vancouver s-1
+https://emb.tvp20.xyz/p2p/?id=270532
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/us.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Real Salt Lake – Vancouver s-2
+https://emb.tvp20.xyz/p2p/?id=269074
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/us.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Real Salt Lake – Vancouver s-3
+https://emb.tvp20.xyz/p2p/?id=271797
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/myimg/cricket.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",New Zealand – India s-1
 https://emb.tvp20.xyz/p2p/?id=268983
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/myimg/cricket.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",New Zealand – India s-2
@@ -67,3 +47,7 @@ https://emb.tvp20.xyz/p2p/?id=271031
 https://emb.tvp20.xyz/p2p/?id=271798
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/co.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Millonarios – America de Cali s-3
 https://emb.tvp20.xyz/p2p/?id=271828
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/skating.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Grand Prix, Tokyo s-1
+https://emb.tvp20.xyz/p2p/?id=269410
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/gd-uxcv/stp/main/img/skating.png" group-title="✨✦ʟɪᴠᴇ ᴇᴠᴇɴᴛꜱ✦✨",Grand Prix, Tokyo s-2
+https://emb.tvp20.xyz/p2p/?id=271389
